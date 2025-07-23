@@ -1,0 +1,16 @@
+<html> 
+<head>
+    <script src="ocr.js"></script>
+</head>
+<body onload="ocroDemo.onLoadFunction()">
+    <div id="main-container" style="text-align:center;">
+        <canvas id="canvas" width="500" height="200"></canvas>
+        <form name="input">
+            <p>Digit:<input id="digit" type="text"></p>
+            <input type="button" value="Train" onClick="ocroDemo.train()">
+            <input type="button" value="Test" onClick="ocroDemo.test()">
+            <input type="button" value="Reset" onClick="ocroDemo.resetCanvas()">
+        </form>
+    </div>
+</body>
+</html>
