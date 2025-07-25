@@ -16,3 +16,6 @@ def test(data_matrix, data_labels_test_indices,nn):
         
         avg_sum += (correct_guess_count / float(len(test_indices)))
     return avg_sum / 100 
+
+
+    
