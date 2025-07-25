@@ -9,7 +9,7 @@ def _rand_init_weights(self, size_in, size_out):
     
 # the sigmoid activation function. operates on scalars 
 def _sigmoid_scalar(self, z):
-    return 1 / (1 + mat.e ** -z)
+    return 1 / (1 + math.e ** -z)
     y1 = np.dot(np.mat(self.thetal), np.mat(data['y0']).T)
     sum1 = y1 + np.mat(self.input_layer_bias) #add the bias 
     y1 = self.sigmoid(sum1)
